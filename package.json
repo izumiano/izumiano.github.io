@@ -1,0 +1,46 @@
+{
+	"name": "home",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"author": "izumiano",
+	"description": "",
+	"keywords": [],
+	"homepage": "",
+	"licence": "MIT",
+	"repository": "",
+	"bugs": {
+		"url": ""
+	},
+	"main": null,
+	"module": null,
+	"types": null,
+	"exports": null,
+	"publishConfig": null,
+	"scripts": {
+		"dev": "vite --host",
+		"typecheck": "tsc --watch --noEmit -p tsconfig.typecheck.json",
+		"build": "tsc -b && vite build",
+		"lint": "biome check",
+		"lintFix": "biome check --write",
+		"preview": "npm run build && vite preview --host",
+		"test": "vitest"
+	},
+	"dependencies": {
+		"@izumiano/vite-logger": "^0.0.1",
+		"react": "^19.2.5",
+		"react-dom": "^19.2.5"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.13",
+		"@pbr1111/vite-plugin-biome": "^1.1.3",
+		"@types/node": "^24.12.2",
+		"@types/react": "^19.2.14",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^6.0.1",
+		"globals": "^17.5.0",
+		"typescript": "~6.0.2",
+		"vite": "^8.0.10",
+		"vitest": "^4.1.5"
+	}
+}
