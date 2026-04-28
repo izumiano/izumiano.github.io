@@ -1,4 +1,4 @@
-import path from "node:path";
+import path, { resolve } from "node:path";
 import logPlugin from "@izumiano/vite-plugin-logger";
 import { biomePlugin } from "@pbr1111/vite-plugin-biome";
 import { defineConfig, loadEnv } from "vite";
@@ -35,6 +35,13 @@ export default defineConfig(({ mode }) => {
 					chunkFileNames: `[name]-[hash].js`,
 					assetFileNames: `[name]-[hash][extname]`,
 					// ====================
+				},
+				input: {
+					main: resolve(__dirname, "index.html"),
+					"celeste-time-tools": resolve(
+						__dirname,
+						"celeste-time-tools/index.html",
+					),
 				},
 			},
 		},

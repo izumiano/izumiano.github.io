@@ -8,6 +8,8 @@
 	"files": {
 		"includes": [
 			"src/**",
+			"home/**",
+			"celeste-time-tools/**",
 			"package.json",
 			"tsconfig.*.json",
 			"tsconfig.json",
